@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --cor-primaria:#000000;
-    --cor-secundaria:#F6F6F6;
-    --cor-terciaria:#22D4FD;
-    --cor-hover:#272727;
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
 }
 
 * {
@@ -17,15 +17,15 @@
 
 body {
 
-    background-color:var(--cor-primaria);
+    background-color: var(--cor-primaria);
     box-sizing: border-box;
     color: var(--cor-secundaria);
 
 }
 
 .cabecalho {
-    padding: 2% 0% 0% 15% ;
-    
+    padding: 2% 0% 0% 15%;
+
 }
 
 .cabecalho-menu {
@@ -52,6 +52,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 img {
@@ -131,4 +132,26 @@ img {
     color: var(--cor-primaria);
     padding: 1.5rem;
     text-align: center;
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding:10%;
+    }
+
+    .cabecalho-menu{
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao-conteudo {
+        width: auto;
+    }
+
+
 }
